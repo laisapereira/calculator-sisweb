@@ -24,7 +24,6 @@ let currentInput = "";
     currentInput += pValue;
     resultElement.innerHTML = currentInput;
   }
-
   function calculate() {
     var result = resultElement.innerHTML;
     if(result) {
@@ -55,7 +54,8 @@ let currentInput = "";
       resultElement.innerHTML = newResult;
     }
   }
-
+  
+  
   function sqrtNumber() {
     const result = parseInt(resultElement.innerHTML)
     if (isNaN(result)) {
@@ -85,8 +85,8 @@ let currentInput = "";
         handleNumberClick(event);
         break;
       case event.target.classList.contains("fatorial"):
-        fatorial();
-        break;
+        fatorial()
+        break; 
       case event.target.classList.contains("sqrt"):
         sqrtNumber();
         break;

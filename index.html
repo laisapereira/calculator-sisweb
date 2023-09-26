@@ -2,69 +2,83 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron&family=Roboto:wght@100;400;700&family=Syne:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title> SisWeb-Calculadora</title>
 </head>
 <body>
   <main>
     
-      <h1> SisWeb-Calculadora</h1>
+      <a href="/"><img src="/header.svg" alt="calculadora"></a>
       <div id="calculator" onclick="handleButtonClick(event)" >
-        <p id="result"></p>
+       
         <table>
+         <tr>
+          <td colspan="6"> <p id="result">0</p></td>
+    
+         </tr>
+         <div id="result-line"></div>
+
+
           <tr>
-            <td><button class="btn" value="7">7</button></td>
-            <td><button class="btn" value="8">8</button></td>
-            <td><button class="btn" value="9">9</button></td>
-            <td><button class="btn" value="/">:</button></td>
-          </tr>
-          <tr>
-            <td><button class="btn" value="4">4</button></td>
+         
             <td><button class="btn" value="5">5</button></td>
             <td><button class="btn" value="6">6</button></td>
-            <td><button class="btn" value="*">*</button></td>
+            <td><button class="btn" value="7">7</button></td>
+            <td><button class="btn ice-button" value="8">8</button></td>
+            <td><button class="btn brown-button" value="9">9</button></td>
+            <td><button class="btn brown-button" value="/">:</button></td>
           </tr>
           <tr>
             <td><button class="btn" value="1" >1</button></td>
             <td><button class="btn" value="2" >2</button></td>
             <td><button class="btn" value="3">3</button></td>
-            <td><button class="btn" value="-">-</button></td>
+            <td><button class="btn ice-button" value="4">4</button></td>
+            <td><button class="btn brown-button" value="*">*</button></td>
+            <td><button class="btn brown-button" value="-">-</button></td>
           </tr>
           <tr>
             <td><button class="btn" value="0">0</button></td>
-            <td><button class="btn" value=".">.</button></td>
-            <td><button class="calculate" value="=">=</button></td>
+            <td><button class="btn" value=".">.</button></td> 
             <td><button class="btn" value="+">+</button></td>
+            <td><button class="btn ice-button" value="**">x<sup>n</sup></button></td>
+            <td><button class="btn brown-button" value="%">/</button></td>
+            <td><button class="calculate " value="=">=</button></td>  
           </tr>
           <tr>
-            <td><button class="btn" value="**">x<sup>n</sup></button></td>
-            <td><button class="btn" value="%">/</button></td>
             <td><button class="fatorial" value="!">!</button></td>
             <td><button class="btn" value="/100">%</button></td>
-            <td colspan="2" rowspan="2"><button class="clean-button" value="CE" >CE</button></td>
-          </tr>
-
-
-
-          <tr>
             <td><button class="btn" value="(">(</button></td>
-            <td><button class="btn" value=")">)</button></td>
-            <td><button class="sqrt" value="√">√</button></td>
+            <td><button class="btn ice-button" value=")">)</button></td>
+            <td><button class="sqrt brown-button" value="√">√</button></td>
             <td><button class="clean-each-button" value="C">C</button></td>
-           
+
+            
           </tr>
+          <tr>
+            <td colspan="6"><button class="clean-button" value="CE" >CE</button></td>
+          </tr>
+         
+          
 
         </table>
+
+        
       </div>      
   </main>
       <script src="/script.js">
       </script>
   <footer>
     <div>
+
+      <p>ⓒ All rights reserved. 2023</p>
     <p>
       Calculadora desenvolvida para a disciplina de Sistemas Web pelas discentes <a href="https://www.linkedin.com/in/laisa-silva-pereira/">Laisa Pereira</a> e <a href="https://www.linkedin.com/in/milena-limoeiro/"> Milena Limoeiro</a>
     </p>
-    <p>ⓒ All rights reserved. 2023</p>
+    
     </div>
   </footer>
 </body>
