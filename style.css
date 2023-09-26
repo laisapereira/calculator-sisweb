@@ -26,31 +26,37 @@ html, body {
 
 main {
   background-color: var(--dark-blue);
+  min-height: 100%;
 
 }
 
 main img {
-  width: 450px;
-  height: 100%;
+  width: 60%;
+  height: max-content;
   display:block;
   margin: 0 auto;
-  padding-top: 1.2rem;
-  padding-left: 5rem;
-  max-width: 500px;
+  padding-top: 3rem;
+  padding-left: 8rem;
+  max-width: 80%;
 }
 
 table {
   margin: 0 auto;
   background-color: var(--gray);
   border-radius: 0.8rem;
-  padding: 0.8rem;
+  padding: 1.8rem;
+  width: 25%;
+  margin-top: 4rem;
+ 
+}
 
-    
+tr {
+  width: 80%;
 }
 
 td button {
-  width: 35px;
-  height: 35px;
+  width: 80px;
+  height: 50px;
   max-width: 60px;
   min-width: 25px;
   text-align: center;
@@ -59,6 +65,8 @@ td button {
   border: var(--ice-color) 1px solid;
   box-shadow: 0 0 0.2rem var(--pink-baby);
   border-radius: 0.1rem;
+
+  font-size: 1.3rem;
 
   font-family: 'Orbitron', sans-serif;
 }
@@ -111,6 +119,7 @@ td button {
   color: var(--ice-color);
   padding-bottom: 0.5rem;
   text-align: right;
+  font-size: 1.5rem;
 }
 
 #result-line {
@@ -131,7 +140,7 @@ footer {
 a, footer p {
   color: var(--brown);
   font-family: 'Syne', sans-serif;
-  font-size: 0.8rem;
+  font-size: 1.5rem;
 }
 
 footer a:hover {
